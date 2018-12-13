@@ -1,0 +1,15 @@
+{
+  "port": 3006,
+  "endpoints": {
+    "faux_server_1": {
+      "server": "http://will.not.work:3050",
+      "weight": 1
+    },
+    "faux_server_2": {
+      "server": "http://localhost:3013",
+      "weight": -1
+    }
+  },
+  "default": "faux_server_1",
+  "fallback" : "faux_server_2"
+}

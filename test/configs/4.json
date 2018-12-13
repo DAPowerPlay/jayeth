@@ -1,0 +1,19 @@
+{
+  "port": 3004,
+  "endpoints": {
+    "faux_server_1": {
+      "server": "http://localhost:3012",
+      "weight": 1
+    },
+    "faux_server_2": {
+      "server": "http://localhost:3013",
+      "weight": 1
+    }
+  },
+  "methods": {
+    "add": "faux_server_1",
+    "substract": "faux_server_2"
+  },
+  "default": "round-robin",
+  "only-defined-methods" : true
+}

@@ -1,0 +1,15 @@
+{
+  "port": 3005,
+  "endpoints": {
+    "faux_server_1": {
+      "server": "http://localhost:3012",
+      "weight": 1
+    },
+    "faux_server_2": {
+      "server": "http://localhost:3013",
+      "weight": -1
+    }
+  },
+  "default": "round-robin",
+  "fallback" : "faux_server_2"
+}

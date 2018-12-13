@@ -1,0 +1,10 @@
+{
+  "port": 3002,
+  "endpoints": {
+    "faux_server_1": {
+      "server": "http://localhost:3012",
+      "weight": 1
+    }
+  },
+  "default": "round-robin"
+}
