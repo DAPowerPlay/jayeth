@@ -1,8 +1,13 @@
 {
   "name": "jayeth",
-  "version": "2.0.0",
-  "description": "ethereum rpc utils",
+  "version": "2.0.1",
+  "description": "A highly experimental JSON RPC router/loadbalancer/aggregator server. Allows you to expose multiple JSON RPC services on one interface.",
   "main": "index.js",
+  "homepage": "https://github.com/DAPowerPlay/jayeth#readme",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/DAPowerPlay/jayeth.git"
+  },
   "scripts": {
     "test": "./node_modules/standard/bin/cmd.js && ./node_modules/mocha/bin/mocha --exit",
     "fix": "./node_modules/standard/bin/cmd.js --fix"
